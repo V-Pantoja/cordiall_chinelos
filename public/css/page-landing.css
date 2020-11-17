@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*
+   100% = 16px
+   62.5% = 10px 
+   */
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  color: white;
+}
+
+body, input {
+  font: 400 1.8rem/1.5 'Sansita Swashed', cursive;
+}
+
+#page-landing {
+  background: linear-gradient(315.00deg, #5AC2EB 0%, #9337F0 100%);
+
+  text-align: center;
+  min-height: 100vh;
+}
