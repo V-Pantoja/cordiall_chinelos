@@ -1,28 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  /*
-   100% = 16px
-   62.5% = 10px 
-   */
-  font-size: 62.5%;
-}
-
-body {
-  height: 100vh;
-  color: white;
-}
-
-body, input {
-  font: 400 1.8rem/1.5 'Sansita Swashed', cursive;
-}
-
 #page-landing {
-  background: linear-gradient(315.00deg, #5AC2EB 0%, #9337F0 100%);
+  background: linear-gradient(335.20deg, #00B63A 0%, #55E182 100%);
 
   text-align: center;
   min-height: 100vh;
+
+  display: flex;
+}
+
+#container {
+   margin: auto;
+
+   width: 90%;
+}
+
+.location, main h1, .visit p {
+  height: 16vh;
+}
+
+.visit a {
+   color: white;
+   background: #55E182;
+   width: 10rem;
+   height: 10rem;
+
+   border: none;
+   border-radius: 2rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin: auto;
+
+   transition: background 300ms;
+}
+
+.visit a:hover {
+   background: #039A0F;
+}
+
+#logo {
+   animation-delay: 50ms;
+}
+
+.location {
+   animation-delay: 100ms;
+}
+
+main h1 {
+   animation-delay: 150ms;
+}
+
+.visit p {
+   animation-delay: 200ms;
+}
+
+.visit a {
+   animation-delay: 250ms;
 }

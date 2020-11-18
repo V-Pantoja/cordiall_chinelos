@@ -1,0 +1,33 @@
+@keyframes leftt {
+  from {
+     opacity: 0;
+     transform: translateX(50px);
+  }
+  to {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+@keyframes rightt {
+  from {
+     opacity: 0;
+     transform: translateX(-50px);
+  }
+  to {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+.animate-leftt {
+  animation-name: leftt;
+  animation-duration: 900ms;
+  animation-fill-mode: backwards; /* (backwards) fazer com que o elemento receba as ultimas propriedades da animação*/
+}
+
+.animate-rightt {
+  animation-name: rightt;
+  animation-duration: 900ms;
+  animation-fill-mode: backwards; /* (backwards) fazer com que o elemento receba as ultimas propriedades da animação*/
+}
