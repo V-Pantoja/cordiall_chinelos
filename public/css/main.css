@@ -17,5 +17,11 @@ body {
 }
 
 body, input {
-  font: 400 1.8rem/1.5 'Sansita Swashed', cursive;
+  font: 400 1.7rem/1.2 'Quicksand', sans-serif;
+}
+
+hgroup {
+  color: #114B5F;
+  font: 400 3rem/1 'Sansita Swashed', cursive;
+  padding: 1rem;
 }

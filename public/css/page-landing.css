@@ -1,5 +1,5 @@
 #page-landing {
-  background: linear-gradient(335.20deg, #00B63A 0%, #55E182 100%);
+  background: linear-gradient(330.20deg, #5DD39E 0%, #3BCEAC 100%);
 
   text-align: center;
   min-height: 100vh;
@@ -10,33 +10,11 @@
 #container {
    margin: auto;
 
-   width: 90%;
+   width: min(90%, 124rem);
 }
 
 .location, main h1, .visit p {
   height: 16vh;
-}
-
-.visit a {
-   color: white;
-   background: #55E182;
-   width: 10rem;
-   height: 10rem;
-
-   border: none;
-   border-radius: 2rem;
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   margin: auto;
-
-   transition: background 300ms;
-}
-
-.visit a:hover {
-   background: #039A0F;
 }
 
 #logo {
@@ -49,6 +27,7 @@
 
 main h1 {
    animation-delay: 150ms;
+   font-size: clamp(3.5rem, 4vw, 8rem); /* clamp(min, ideal, max) */
 }
 
 .visit p {
@@ -56,5 +35,71 @@ main h1 {
 }
 
 .visit a {
+   color: white;
+   background: #0496ff;
+   width: 8rem;
+   height: 8rem;
+
+   border: none;
+   border-radius: 2rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin: auto;
+
+   transition: background 300ms;
+
    animation-delay: 250ms;
+}
+
+.visit a:hover {
+   background: #01baef;
+}
+
+/* desktop version */
+
+@media (min-width: 760px) { /* Apenas se a largura é de 760px para mais, ai adiciona essas configurações */
+   header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .location, main h1, .visit p {
+      height: initial;
+      text-align: initial;
+   }
+
+   .location {
+      text-align: right;
+      font-size: 2.4rem;
+      line-height: 1.5;
+   }
+
+   main h1 {
+      font-weight: bold;
+      line-height: 1;
+
+      margin: clamp(10%, 9vh, 12%) 0 6rem;
+
+      width: min(700px, 80%);
+   }
+
+   .visit {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .visit p {
+      font-size: 2.4rem;
+      line-height: 1.5;
+      width: clamp(20rem, 30vw, 50rem);
+   }
+
+   .visit a {
+      margin: initial;
+   }
 }
