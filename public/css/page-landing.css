@@ -61,6 +61,12 @@ main h1 {
 /* desktop version */
 
 @media (min-width: 760px) { /* Apenas se a largura é de 760px para mais, ai adiciona essas configurações */
+   #container {
+      padding: 5rem 2rem;
+      /* shorthand background: image repeat position / size */
+      background: url("../imagens/chinelo-branco-cortado.png") no-repeat 80% / clamp(20rem, 54vw, 50rem);
+   }
+
    header {
       display: flex;
       align-items: center;
@@ -82,9 +88,9 @@ main h1 {
       font-weight: bold;
       line-height: 1;
 
-      margin: clamp(10%, 9vh, 12%) 0 6rem;
+      margin: clamp(10%, 9vh, 12%) 0 4rem;
 
-      width: min(700px, 80%);
+      width: min(600px, 50%);
    }
 
    .visit {
@@ -103,3 +109,5 @@ main h1 {
       margin: initial;
    }
 }
+
+/* video 2 - 00:30:04 (Boa relaxada) */
